@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Portal | Goal Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="neon-bg">
+    <canvas id="techCanvas"></canvas>
+    <header class="header glow-border-bottom-magenta">
+        <h1 class="neon-text glow-cyan">Goal Archive Detail</h1>
+        <button id="backBtn" class="neon-btn glow-btn-cyan small-btn">RETURN TO MATRIX</button>
+    </header>
+
+    <main class="goal-detail-container">
+        <div class="goal-loader">
+            <h2 id="goalTitle" class="huge-neon glow-magenta">Loading...</h2>
+            <img id="goalImage" src="" alt="Goal Image" style="display:none; max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 0 20px rgba(0,255,255,0.3); border: 1px solid var(--neon-cyan);" />
+            <div class="goal-content box-glow-green">
+                <p id="goalDesc" class="font-inter text-glow-light">Decrypting goal data...</p>
+                <div class="action-area">
+                    <a id="goalLink" href="#" target="_blank" class="neon-btn glow-btn-magenta large-btn">ACCESS OFFICIAL ARCHIVE >></a>
+                </div>
+            </div>
+            <div class="goal-meta box-glow-cyan">
+                <h3>System Logs:</h3>
+                <ul>
+                    <li>Clearance Level: Global Citizen</li>
+                    <li>Status: Active Protocol</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="credits glow-green">
+        <p>Created by: <strong>S R M HARINNETHRAN</strong>, <strong>T.GOKUL</strong></p>
+        <p class="team-name glow-magenta">TEAM: NEONS CORE</p>
+    </footer>
+
+    <!-- NEONS AI Assistant Widget -->
+    <div class="ai-widget-container" id="aiWidget">
+        <button id="toggleAiBtn" class="neon-btn glow-btn-cyan ai-fab">
+            <span class="orbitron">NEONS AI CORE</span>
+        </button>
+        <div class="ai-chat-window box-glow-cyan" id="aiChatWindow" style="display: none;">
+            <div class="ai-chat-header glow-border-bottom-magenta">
+                <span class="orbitron neon-text glow-cyan">NEONS TERMINAL</span>
+                <button id="closeAiBtn" class="neon-btn small-btn glow-btn-red">&times;</button>
+            </div>
+            <div class="ai-chat-body" id="aiChatBody">
+                <div class="ai-msg bot"><span class="glow-cyan">NEONS:</span> Hacker recognized. I am your integrated SDG advisor matrix. What is your query?</div>
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" id="aiInput" class="glow-border-cyan" placeholder="Transmission..." autocomplete="off"/>
+                <button id="sendAiBtn" class="neon-btn glow-btn-cyan small-btn">SEND</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.onload = () => {
+            loadGoalData();
+            document.getElementById('backBtn').addEventListener('click', () => {
+                window.location.href = 'dashboard.html';
+            });
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Portal | Briefing 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .briefing-card { background: rgba(0,0,0,0.7); backdrop-filter: blur(10px); padding: 2.5rem; border-radius: 12px; margin-top: 2rem; border: 1px solid var(--neon-magenta); box-shadow: 0 0 30px rgba(255, 0, 255, 0.2); max-width: 900px; margin-left: auto; margin-right: auto; }
+        .briefing-img { width: 100%; height: 350px; object-fit: cover; border-radius: 8px; border: 2px solid var(--neon-yellow); opacity: 0.9; margin-bottom: 2rem; box-shadow: 0 0 20px rgba(255, 255, 0, 0.3); }
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 3rem; }
+    </style>
+</head>
+<body class="neon-bg">
+    <canvas id="techCanvas"></canvas>
+    <header class="header glow-border-bottom-magenta">
+        <h1 class="neon-text glow-cyan">NEONS CORE: Briefing Protocol <span class="glow-magenta">3/4</span></h1>
+        <button onclick="window.location.href='dashboard.html'" class="neon-btn glow-btn-red small-btn">SKIP BRIEFING</button>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="briefing-card">
+            <h2 class="huge-neon glow-magenta orbitron" style="font-size: 2rem; margin-bottom: 2rem; text-align: center;">TECHNOLOGICAL SYNERGY</h2>
+            
+            <img src="images/3.png" alt="Massive glowing server arrays and clean solar energy" class="briefing-img">
+
+            <p class="font-inter text-light" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; color: #ddd;">
+                Sustainable solutions demand radical technological synchronization. Infrastructure nodes, energy distribution AI, and automated renewable pipelines run concurrently to optimize the global baseline.
+            </p>
+            <p class="font-inter text-light" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; text-align: justify; color: #ddd;">
+                We are rewriting urban landscapes into interconnected smart systems. Innovation targets (Goal 9) construct the physical foundation, while Sustainable Cities (Goal 11) deploy these arrays to house millions efficiently with minimal carbon impact.
+            </p>
+
+            <div class="box-glow-green" style="padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h3 class="orbitron glow-green" style="margin-bottom: 0.5rem; font-size: 1.2rem;">TOP SECURED INTEL (ARTICLE 3):</h3>
+                <a href="https://www.un.org/sustainabledevelopment/infrastructure-industrialization/" target="_blank" class="glow-cyan" style="text-decoration: none; font-weight: bold; font-family: 'Inter';">
+                    >> View: Infrastructure Optimization Directive
+                </a>
+            </div>
+
+            <div class="nav-buttons">
+                <button onclick="window.location.href='briefing-2.html'" class="neon-btn glow-btn-cyan large-btn" style="margin-top: 0;"><< BACK</button>
+                <button onclick="window.location.href='briefing-4.html'" class="neon-btn glow-btn-magenta large-btn" style="margin-top: 0;">FINAL DIRECTIVE >></button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="credits glow-green">
+        <p>Created by: <strong>S R M HARINNETHRAN</strong>, <strong>T.GOKUL</strong></p>
+        <p class="team-name glow-cyan">TEAM: NEONS CORE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
